@@ -1,0 +1,76 @@
+.list-tasks {
+  display: flex;
+  gap: 4em;
+}
+
+.list-type {
+  width: 23rem;
+  .list-header__todos {
+    height: 3em;
+    padding-left: 1em;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    color: white;
+    h4 {
+      span {
+        color: black;
+        background-color: white;
+        border-radius: 100%;
+        padding: 2px 5px;
+        font-size: 12px;
+        margin-left: 1em;
+      }
+    }
+  }
+  .list-header__todos {
+    background-color: rgb(97, 102, 97);
+  }
+}
+
+.task-card {
+  position: relative;
+  padding: 1em;
+  margin-top: 1em;
+  border-radius: 4px;
+  box-shadow: -2px 5px 10px -6px;
+  cursor: grab;
+  p {
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .action-btn {
+    position: absolute;
+    bottom: 1px;
+    right: 1px;
+    button {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      .fa-trash {
+        color: red;
+      }
+
+      .fa-pen-to-square {
+        color: blue;
+      }
+    }
+  }
+  .edit-task {
+    display: flex;
+    button {
+      background-color: transparent;
+      cursor: pointer;
+      border: none;
+      .fa-check {
+        color: rgb(14, 164, 14);
+      }
+      .fa-xmark {
+        color: rgb(164, 14, 14);
+      }
+    }
+  }
+}

@@ -1,0 +1,119 @@
+body {
+  margin: 0%;
+}
+
+.clock-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid black;
+}
+
+.todo-app {
+  background-color: rgb(234, 234, 234);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3em;
+  padding-top: 2rem;
+}
+
+.create-task {
+  display: flex;
+  align-items: center;
+  max-width: 23em;
+  width: 100%;
+  height: auto;
+}
+.create-task__input {
+  border: 2px solid black;
+  background-color: #fff;
+  border-radius: 4px;
+  margin-right: 2em;
+  height: 3em;
+  width: 100%;
+  padding: 0 0.5em 0 0.5em;
+}
+.create-task__btn {
+  background: rgb(109, 215, 215);
+  color: #fff;
+  border: 2px solid rgb(98, 195, 195);
+  border-radius: 4px;
+  height: 3em;
+  padding: 0 1em 0 1em;
+}
+
+.list-tasks {
+  display: flex;
+  gap: 4em;
+}
+
+.list-type {
+  width: 23rem;
+}
+.list-type .list-header__todos {
+  height: 3em;
+  padding-left: 1em;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  color: white;
+}
+.list-type .list-header__todos h4 span {
+  color: black;
+  background-color: white;
+  border-radius: 100%;
+  padding: 2px 5px;
+  font-size: 12px;
+  margin-left: 1em;
+}
+.list-type .list-header__todos {
+  background-color: rgb(97, 102, 97);
+}
+
+.task-card {
+  position: relative;
+  padding: 1em;
+  margin-top: 1em;
+  border-radius: 4px;
+  box-shadow: -2px 5px 10px -6px;
+  cursor: grab;
+}
+.task-card p {
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.task-card .action-btn {
+  position: absolute;
+  bottom: 1px;
+  right: 1px;
+}
+.task-card .action-btn button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.task-card .action-btn button .fa-trash {
+  color: red;
+}
+.task-card .action-btn button .fa-pen-to-square {
+  color: blue;
+}
+.task-card .edit-task {
+  display: flex;
+}
+.task-card .edit-task button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+}
+.task-card .edit-task button .fa-check {
+  color: rgb(14, 164, 14);
+}
+.task-card .edit-task button .fa-xmark {
+  color: rgb(164, 14, 14);
+}/*# sourceMappingURL=main.css.map */
